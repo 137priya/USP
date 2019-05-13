@@ -1,9 +1,12 @@
 #include "apue.h"
+#include<stdio.h>
+#include<unistd.h>
+#include<fcntl.h>
 static void charatatime(char *);
 int main(void)
 {pid_t pid;
 if ((pid = fork()) < 0) {
-err_sys("fork error");
+printf("fork error");
 } 
 else if (pid == 0) {
 charatatime("output from child\n");
