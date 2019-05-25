@@ -16,8 +16,7 @@ printf("Error!\n");
 if(stat(argv[2],&statbuf_2)<0)
 printf("Error!\n");
 printf("Before Copying ...\n");
-printf("Access Time %s\nModification Time%s\n", ctime(&statbuf_1.st_atime), 		
-ctime(&statbuf_1.st_mtime));
+printf("Access Time %s\nModification Time%s\n",ctime(&statbuf_1.st_atime),ctime(&statbuf_1.st_mtime));
 times.modtime = statbuf_2.st_mtime;
 times.actime = statbuf_2.st_atime;
 
