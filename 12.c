@@ -1,3 +1,7 @@
+/* How to Run:-
+Open 2 terminals, in one do cc client -o client, in the other do cc server -o server
+Then ./client hello in client terminal and ./server in server terminal.
+*/
 //Client
 #include <stdio.h>
 #include <unistd.h>
