@@ -1,3 +1,4 @@
+//for output: ls -l |grep source2.txt
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/stat.h>
