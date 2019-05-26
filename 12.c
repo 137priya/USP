@@ -13,8 +13,7 @@ Then ./client hello in client terminal and ./server in server terminal.
 
 int main(int argc,char* argv[])
 {char buffer[MAX];
-int in,out;
-int n;
+int in,out,n;
 in = open("server_to_client",O_RDWR,0777);
 out = open("client_to_server",O_RDWR,0777);
 printf("Sending Message\n");
