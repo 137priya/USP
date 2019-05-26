@@ -8,7 +8,7 @@
 int main(){
 struct utimbuf times;
 struct stat mystat;
-umask(0600);
+umask(0066);
 if(creat("source2.txt",0666)<0){
 printf("Error");
 return 0;
